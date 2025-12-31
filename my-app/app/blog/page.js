@@ -1,5 +1,5 @@
 import React from "react";
-
+import Link from "next/link";
 // dummy database
 const blogs = [
   {
@@ -20,7 +20,7 @@ export default function Blog() {
       <ul>
         {blogs.map((blog) => (
           <li className="mb-5" key={blog.id}>
-            {blog.title}
+            <Link href={`/blog/${blog.id}`}>{blog.title}</Link>
           </li>
         ))}
       </ul>

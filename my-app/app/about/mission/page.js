@@ -1,7 +1,9 @@
-import React from 'react'
-
+import Button from "@/app/components/Button"
 export default function Mission() {
   return (
-    <div>Mission</div>
+    <main>
+        <div> Mission Page</div>
+      <Button/>
+    </main>
   )
 }
